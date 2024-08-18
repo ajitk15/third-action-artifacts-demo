@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: build index page
-        run: echo "<html><body><h1>HelloWorld!</h1></body></html>" > index.html
+        run: echo "<html><body><h1>HelloWorld from artifacts!</h1></body></html>" > index.html
       - name: upload artifacts
         uses: actions/upload-artifact@v4
         with:
@@ -23,6 +23,6 @@ jobs:
       - name: list artifacts
         run: |
           ls -lR
-          
+          more index.html
 
 
