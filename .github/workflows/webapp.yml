@@ -19,10 +19,10 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: index-file
-          path: index.html
+          path: home
       - name: list artifacts
         run: |
           ls -lR
-          more index.html
+          more home/index.html
 
 
