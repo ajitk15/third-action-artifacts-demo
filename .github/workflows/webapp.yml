@@ -20,5 +20,9 @@ jobs:
         with:
           name: index-file
           path: index.html
+      - name: list artifacts
+        run: |
+          ls -lR
+          
 
 
