@@ -11,3 +11,12 @@ jobs:
         with:
           name: index-file
           path: index.html
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: download artifacts
+        uses: actions/download-artifacts@v4
+        with:
+          name: index-file
+
+
